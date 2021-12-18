@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- bootstrap stylesheet -->
+    <link
+     rel="stylesheet"
+     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <!-- GET request -->
+            <form action="/" method="GET">
+                <!-- INPUT1 -->
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Input 1</label>
+                  <input type="text" name="input1" class="form-control" id="exampleFormControlInput1" placeholder="Value">
+                </div>
+                <!-- INPUT2 -->
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Input 2</label>
+                  <input type="text" name="input2" class="form-control" id="exampleFormControlInput1" placeholder="Value">
+                </div>
+                <!-- INPUT3 -->
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Input 3</label>
+                  <input type="text" name="input3" class="form-control" id="exampleFormControlInput1" placeholder="Value">
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
+              <!-- Concatenated string -->
+              <p class="lead text-center">
+                  <%=inputs.input1%>
+                  <%=inputs.input2%>
+                  <%=inputs.input3%>
+              </p>
+          </div>
+    </div>
+</body>
+</html>
